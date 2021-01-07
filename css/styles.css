@@ -93,26 +93,33 @@ nav{
     position: sticky;
     top: 106px;
     z-index: 1;
-  }
-  nav ul{
+}
+
+nav ul{
     white-space: nowrap;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-  }
-  nav li{
+}
+
+nav li{
     width: 25%;
     display: inline-block;
     font-size: 24px;
-  }
+}
   
-  li {
+li {
     font-size: 30px;
     list-style: none;
     background-color: white;
     padding: 8px;
-  }
+}
 
+a {
+    text-decoration: none;
+}
+
+/* animations */
 @keyframes status{
     0%{
         opacity: 1;
@@ -128,6 +135,7 @@ nav{
     }
 }
 
+/* responsive design */
 @media screen and (max-width: 600px) {
     nav li{
       display: block;
