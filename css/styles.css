@@ -87,6 +87,32 @@ button[type="submit"]:hover {
     animation: status 4s ease forwards;
 }
 
+nav{
+    background-color: white;
+    padding: 20px;
+    position: sticky;
+    top: 106px;
+    z-index: 1;
+  }
+  nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+  }
+  
+  li {
+    font-size: 30px;
+    list-style: none;
+    background-color: white;
+    padding: 8px;
+  }
+
 @keyframes status{
     0%{
         opacity: 1;
@@ -101,3 +127,11 @@ button[type="submit"]:hover {
         pointer-events: none;
     }
 }
+
+@media screen and (max-width: 600px) {
+    nav li{
+      display: block;
+      width: 100%;
+      margin: 12px 0;
+    }
+  }
